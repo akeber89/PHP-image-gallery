@@ -1,6 +1,6 @@
 <?php
 
-function directoryReader ($directory, array $excludeFiles = ['.', '..']) {
+function directoryReader ($directory, array $excludeFiles = ['.', '..', '.DS_Store']) {
     $files = [];
 
     if (!is_dir($directory)) {  // if this is not an existing dir, return null
