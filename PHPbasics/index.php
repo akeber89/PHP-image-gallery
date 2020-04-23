@@ -22,14 +22,16 @@ if (!$images){
 
         <title>Image gallery</title> 
 
+        <link rel="stylesheet" href="styles.css">
+
 
     </head> 
 
-    <body>
+    <body class = container>
 
         <?php foreach ($images as $image): ?>
 
-            <img width="50%" height="50%" src = "<?php echo $image; ?>">
+            <img src = "<?php echo $image; ?>">
 
         <?php endforeach; ?>
         
